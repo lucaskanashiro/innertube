@@ -2,3 +2,5 @@ language: ruby
 script: bundle exec rspec --color
 rvm:
   - 2.7.0
+before_install:
+  - rvm @global do yes | gem install thwait
